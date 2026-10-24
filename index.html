@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المساعد الصوتي - النسخة النصية</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f4f4f9; color: #333; text-align: center; padding: 20px; }
+        .container { background: white; padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); max-width: 400px; margin: auto; }
+        input { width: 80%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; font-size: 16px; }
+        button { padding: 10px 20px; background-color: #007bff; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer; }
+        button:hover { background-color: #0056b3; }
+        #result { margin-top: 20px; font-weight: bold; color: #28a745; min-height: 50px; }
+        #log { font-size: 12px; color: #666; margin-top: 10px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>المساعد الصوتي</h2>
+        <p>النسخة النصية (بانتظار إصلاح المايك)</p>
+        <input type="text" id="commandInput" placeholder="اكتب أمرك هنا... (مثال: افتح الحاسبة)">
+        <br>
+        <button onclick="processCommand()">تنفيذ الأمر</button>
+        <div id="result"></div>
+        <div id="log"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
